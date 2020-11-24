@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Segment";
+  src: url(../assets/fonts/seven_segment/Seven\ Segment.ttf);
+}
+:root {
+  --dark-night-mode-button: rgb(43, 43, 43);
+  --light-night-mode-button: rgb(233, 233, 233);
+  --dark-output-color: rgb(99, 99, 99);
+  --light-output-color: rgb(221, 246, 253);
+  --light-frame-color: rgba(128, 128, 128, 0.5);
+  --dark-frame-color: rgba(0, 0, 0, 0.582);
+  --light-history-color: rgba(216, 216, 216, 0.555);
+  --dark-history-color: rgba(146, 146, 146, 0.5);
+  --light-clear-color: rgb(117, 117, 117);
+  --dark-clear-color: rgb(235, 235, 235);
+  --light-color: rgb(29, 29, 29);
+  --dark-color: rgb(233, 233, 233);
+}
+#bg-img {
+  background-image: url(../assets/images/img1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(12px);
+  height: 190%;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  color: var(--light-color);
+}
+#night-mode {
+  position: absolute;
+  z-index: 10;
+  right: 2vw;
+  top: 4vh;
+}
+#night-mode-img {
+  height: 15px;
+  width: 15px;
+}
+#night-mode-button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: var(--dark-night-mode-button);
+  border: none;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+#main > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 10vh;
+}
+#calculator,
+#history {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+  height: 545px;
+  width: 325px;
+  background: var(--light-frame-color);
+  border-radius: 10px;
+}
+#delete img {
+  height: 23px;
+  width: 23px;
+}
+#output {
+  height: 50px;
+  background-color: var(--light-output-color);
+  text-align: end;
+  font-family: "Segment";
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-y: hidden;
+}
+table {
+  width: 100%;
+  height: 495px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.button {
+  padding-left: 5px;
+}
+.button button {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  border-radius: 50%;
+  z-index: 0;
+  transition: 0.5s;
+  font-size: 23px;
+}
+.button button:hover {
+  background-color: rgb(206, 134, 0);
+}
+.button button:active {
+  background-color: rgba(128, 128, 128, 0.6);
+  color: white;
+  transform: scale(1.2);
+  z-index: 10;
+}
+#equ {
+  background-color: rgba(255, 166, 0, 0.5);
+  height: 160px;
+  border-radius: 50px;
+}
+#equ:hover {
+  background-color: white;
+  color: black;
+}
+#delete {
+  background-color: rgba(255, 192, 203, 0.5);
+  color: grey;
+}
+#delete:hover {
+  background-color: white;
+  color: black;
+}
+#erase {
+  background-color: rgba(255, 99, 71, 0.5);
+  color: white;
+}
+#erase:hover {
+  background-color: white;
+  color: black;
+}
+#history {
+  background-color: var(--light-history-color);
+}
+#histOut {
+  text-align: end;
+  font-size: 40px;
+  font-family: "Segment";
+  margin: 10px;
+}
+#histAff {
+  height: 95%;
+  width: 100%;
+  overflow: auto;
+}
+#clear {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--light-clear-color);
+  border-radius: 0%;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 634px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #main > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hist {
+    transform: translateY(10%);
+  }
+}
+@media screen and (max-width: 810px) and (min-width: 634px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #history,
+  #calculator {
+    width: 565px;
+    height: 430px;
+    font-size: 18px;
+  }
+  #main > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hist {
+    transform: translateY(20%);
+  }
+  table {
+    height: 390px;
+  }
+  .button {
+    padding-left: 30px;
+  }
+  .button button {
+    height: 50px;
+    width: 90px;
+    border-radius: 100px;
+    font-size: 18px;
+  }
+  #equ {
+    height: 130px;
+    border-radius: 30px;
+  }
+}

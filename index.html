@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Simple calculator made with HTML CSS and JavaScript" />
+    <meta name="author" content="Touahria Yacine" />
+    <meta name="keywords" content="calculator night mode history addition subtraction multiplication division add plus minus" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/calculator.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script/scripts.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="bg-img"></div>
+    <div id="night-mode">
+      <button id="night-mode-button" onclick="ApplyNightMode();">
+        <img
+          id="night-mode-img"
+          src="assets/images/night.svg"
+          alt="night mode button"
+        />
+      </button>
+    </div>
+    <div id="main">
+      <ul>
+        <li>
+          <ul id="calculator">
+            <li id="display">
+              <div id="output">0</div>
+            </li>
+            <li id="buttons">
+              <table>
+                <tr>
+                  <td class="button">
+                    <button id="erase" onclick="EraseAll(stack);">AC</button>
+                  </td>
+                  <td class="button">
+                    <button id="delete" onclick="Delete(stack);">
+                      <img src="assets/images/delete.svg" alt="delete" />
+                    </button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'*');">*</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'/');">/</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'7');">7</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'8');">8</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'9');">9</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'+');">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'4');">4</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'5');">5</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'6');">6</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'-');">-</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'1');">1</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'2');">2</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'3');">3</button>
+                  </td>
+                  <td class="button" rowspan="2">
+                    <button id="equ" onclick="Calculate(stack);">=</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'3.14159265359');">π</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'0');">0</button>
+                  </td>
+                  <td class="button">
+                    <button onclick="Pressed(stack,'.');">.</button>
+                  </td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </li>
+        <li id="hist">
+          <div>
+            <ul id="history">
+              <li>
+                <button id="clear" onclick="clearAll(stack);">clear</button>
+              </li>
+              <li id="histAff">
+                <div id="histOut"></div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
