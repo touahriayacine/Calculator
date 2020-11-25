@@ -1,6 +1,8 @@
 # Basic Calculus
 
+<div style="text-align:center">
 <img src="https://www.flaticon.com/svg/static/icons/svg/715/715578.svg" height="60px">
+</div> 
 
 ---
 
