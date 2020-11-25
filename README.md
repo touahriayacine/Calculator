@@ -1,6 +1,6 @@
 # Basic Calculus
 
-<img src="https://www.flaticon.com/svg/static/icons/svg/715/715578.svg" height="20px">
+<img src="https://www.flaticon.com/svg/static/icons/svg/715/715578.svg" height="60px">
 
 ---
 
@@ -28,11 +28,11 @@ The picture is above ⬆️
 
 #### For smartphones
 
-<img src="readme/light-smartphone.png" height="300px">
+<img src="readme/light-smartphone.png" height="600px">
 
 #### For tablets
 
-<img src="readme/light-tablette.png" height="300px">
+<img src="readme/light-tablette.png" height="600px">
 
 ### Night mode
 
