@@ -28,11 +28,11 @@ The picture is above ⬆️
 
 #### For smartphones
 
-<img src="readme/light-smartphone.png" height="600px">
+<img src="readme/light-smartphone.png" height="800px">
 
 #### For tablets
 
-<img src="readme/light-tablette.png" height="600px">
+<img src="readme/light-tablette.png" height="800px">
 
 ### Night mode
 
@@ -44,4 +44,4 @@ This is the coolest feature of this calculator.
 
 when you do some math with Basic Calculus, it automatically save the results in card . This functionality helps you to compare analyse and copy the results.
 
-<img src="readme/history-card.png" >
+<img src="readme/history-card.png" height="800px">
