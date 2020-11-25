@@ -28,7 +28,7 @@ The picture is above ⬆️
 
 #### For smartphones
 
-<img src="readme/light-smartphone.png" height="800px">
+<img src="readme/light-smartphone.png" height="800px" text-align="center">
 
 #### For tablets
 
