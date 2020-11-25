@@ -1,6 +1,6 @@
 # Basic Calculus
 
-<img src="https://www.flaticon.com/svg/static/icons/svg/715/715578.svg" id="logo">
+<img src="https://www.flaticon.com/svg/static/icons/svg/715/715578.svg" height="20px">
 
 ---
 
@@ -28,11 +28,11 @@ The picture is above ⬆️
 
 #### For smartphones
 
-<img src="readme/light-smartphone.png" id="smartphone">
+<img src="readme/light-smartphone.png" height="300px">
 
 #### For tablets
 
-<img src="readme/light-tablette.png" id="tablet">
+<img src="readme/light-tablette.png" height="300px">
 
 ### Night mode
 
@@ -44,28 +44,4 @@ This is the coolest feature of this calculator.
 
 when you do some math with Basic Calculus, it automatically save the results in card . This functionality helps you to compare analyse and copy the results.
 
-<img src="readme/history-card.png" id="history">
-
-<style>
- #logo{
-    height: 40px;
-    width: 60px;
-    position: relative;
-    left: 45%
- }
- #smartphone{
-    position: relative;
-    left: 40%;
-    height: 300px;
- }
- #tablet{
-     position: relative;
-     left: 33%;
-     height: 300px;
- }
- #history{
-     height: 200px;
-     position: relative;
-     left: 40%
- }
-</style>
+<img src="readme/history-card.png" >
