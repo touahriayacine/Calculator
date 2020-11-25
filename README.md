@@ -44,4 +44,4 @@ This is the coolest feature of this calculator.
 
 when you do some math with Basic Calculus, it automatically save the results in card . This functionality helps you to compare analyse and copy the results.
 
-<img src="readme/history-card.png" height="800px">
+<img src="readme/history-card.png" height="400px">
